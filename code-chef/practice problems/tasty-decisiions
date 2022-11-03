@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,x,y,tchoc,tcand;
+	cin>>t;
+	if(t>=1&&t<=100)
+	{
+	while(t--)
+	{
+	   cin>>x>>y;
+	  
+	   
+	   tchoc =x*2;
+	   tcand= y*5;
+	   if(tchoc>tcand)
+	   {
+	       cout<<"Chocolate"<<endl;
+	       
+	   }
+	   else
+	   if(tchoc<tcand)
+	   {
+	   cout<<"Candy"<<endl;
+	}
+	else
+	cout<<"Either"<<endl;
+	   }
+	
+	}
+	return 0;
+}
