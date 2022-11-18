@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	double x,y, c;
+	cin>>t;
+	if(t>=1&&t<=1000)
+	{
+	while(t>0)
+	{	    c=0;
+	    cin>>x>>y;
+	    if((x&&y)>=1&&(x&&y)<=1000000)
+	    {
+
+	    c=(y/x)*100;
+	   
+	    if(c>=50)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	        else 
+	        
+	        cout<<"NO"<<endl;
+	    }
+	    
+	    t--;
+}
+}
+	return 0;
+}
