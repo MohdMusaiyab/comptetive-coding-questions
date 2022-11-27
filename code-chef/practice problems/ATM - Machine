@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,k;
+	    cin>>n>>k;
+	    int arr[100];
+	   
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>arr[i];
+	    }
+	    
+	    for(int i=0;i<n;i++)
+	    {   int get=0;
+	        if(arr[i]<=k)
+	        {
+	            get=1;
+	            k=k-arr[i];
+	            cout<<get;
+	        }
+	        else{
+	            cout<<get;
+	        }
+	        
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
