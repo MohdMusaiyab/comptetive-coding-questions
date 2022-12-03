@@ -1,0 +1,5 @@
+A queue is a linear data structure that allows users to store items in a list in a systematic manner. 
+The items are added to the queue at the rear end until they are full, at which point they are removed from the queue from the front.
+Queues are commonly used in situations where the users want to hold items for a long period of time, such as during a checkout process. 
+A good example of a queue is any queue of customers for a resource where the first consumer is served first.
+
