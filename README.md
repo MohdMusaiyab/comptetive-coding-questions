@@ -1,5 +1,5 @@
 # comptetive-coding-questions
--> Codechef comptetive platform quwstions.
+-> Codechef comptetive platform questions.
 -> DSA problems.
 -> Comptetive-coding-questions for practice
 -> Feel free to add more questions
