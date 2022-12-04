@@ -1,5 +1,5 @@
-A linked list is a linear data structure (like arrays) where each element is a separate object.
-Each element (that is node) of a list is comprised of two items – the data and a reference to the next node. 
+> A linked list is a linear data structure (like arrays) where each element is a separate object.
+> Each element (that is node) of a list is comprised of two items – the data and a reference to the next node. 
 
 Types of Linked List : 
 
