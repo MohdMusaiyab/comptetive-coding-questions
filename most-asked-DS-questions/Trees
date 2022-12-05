@@ -1,31 +1,31 @@
 Data structure interview questions like this are very common and frequently asked
 
-The General Tree
+1. The General Tree
 A tree is referred to as a generic tree if its hierarchy is not constrained. In the General Tree, 
 each node can have an endless number of offspring, and all other trees are subsets of the tree.
 
-The Binary Tree
+2. The Binary Tree
 The binary tree is a type of tree in which each parent has at least two offspring.
 The children are referred to as the left and right youngsters. This tree is more popular than most others.
 When specific limitations and features are given to a Binary tree, various trees such as AVL tree, BST (Binary Search Tree), RBT tree, 
 and so on are also utilized. 
 
-Tree of Binary Search
+3. Tree of Binary Search
 Binary Search Tree (BST) is a binary tree extension that includes numerous optional constraints. 
 In BST, a node's left child value should be less than or equal to the parent value,
 while the correct child value should always be higher than or equal to the parent's value.
 
-The AVL Tree
+4. The AVL Tree
 The AVL tree is a self-balancing binary search tree. The term AVL is given in honor of the inventors Adelson-Velshi and Landis. 
 This was the first tree to achieve dynamic equilibrium. Each node in the AVL tree is assigned a balancing factor based on
 whether the tree is balanced or not. The node kids have a maximum height of one AVL vine.
 
-Red and Black Tree
+5. Red and Black Tree
 Red-black trees are another type of auto-balancing tree. The red-black term is derived from the qualities of the red-black tree,
 which has either red or black painted on each node. It helps to keep the forest in balance. 
 Even though this tree is not perfectly balanced, the searching process takes just O (log n) time.
 
-The N-ary Tree
+6. The N-ary Tree
 In this sort of tree with a node, N is the maximum number of children. A binary tree is a two-year tree since
 each binary tree node has no more than two offspring. 
 A full N-ary tree is one in which the children of each node are either 0 or N.
