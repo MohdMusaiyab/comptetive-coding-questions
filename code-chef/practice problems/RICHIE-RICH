@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b,x,s;
+	cin>>t;
+	while (t--)
+	{ s=0;
+	    cin>>a>>b>>x;
+	     s=(b-a)/x;
+	    cout<<s<<endl;
+	}
+	return 0;
+}
