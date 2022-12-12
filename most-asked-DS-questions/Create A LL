@@ -31,7 +31,7 @@ Node *create()
      new_node->data=data;
         if(head==NULL)
         {
-            //  //we can either creat new_node in each loop or use it once on the top .
+
            
             head=new_node;
             tail=new_node; //this way has less time complexity
@@ -49,8 +49,8 @@ Node *create()
 void display(Node *head)
  {
     Node *temp=head;
-    while(temp!=NULL) //in this case all will be printed along with the last elemnt  however if we use head->next!NULL then last will not be printed
-    //Here we are using a temp ptr so that we dont lose our head ptr
+    while(temp!=NULL) 
+    
     
     {   
         cout<<temp->data<<" ";
