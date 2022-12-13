@@ -26,6 +26,7 @@ int main() {
 	        b1++;
 	    }
 	    int i;
+	    //FINDING VALUE OF MINIMUM VALUE OF ZEROES || ONES
 	    for( i=0;i<min((a0+b0),(a1+b1));i++)
 	    {
 	        cout<<"1";
