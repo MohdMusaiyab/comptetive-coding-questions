@@ -1,0 +1,70 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+//Below is our Node class that we will be using in the program
+class Node{
+public:
+int data;
+Node *next;
+};
+Node *create();
+void display(Node *head);
+Node *begining(Node *head,int data);
+int main()
+{
+    Node *head = create();
+    display(head);
+    int data;
+    cout<<"Now enter the element to be added in the beginnig\n";
+    cin>>data;
+    head=begining(head,data);
+    display(head);
+    return 0;
+}
+Node *create()
+{
+    Node *head = NULL;
+    Node *tail = NULL;
+    
+    cout<<"Enter the elements and press -1 for termination\n";
+    int data;
+    cin >> data;
+    while (data!=-1)
+    {
+        Node *new_node = new Node;
+        new_node->data = data;
+
+        if (head == NULL)
+        {
+            head = new_node;
+            tail = head;
+        }
+        else
+        {
+            tail->next = new_node;
+            tail = tail->next;
+            new_node->next = NULL;
+        }
+        cin>>data;
+    }
+    return head;
+}
+void display(Node *head)
+{
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+Node *begining(Node *head,int data)
+{
+    Node *new_node=new Node;
+    new_node->data=data;
+    new_node->next=head;
+    head=new_node;
+    return head;
+}
