@@ -1,0 +1,82 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include "node.h"
+using namespace std;
+ class Node{
+     public:
+     int data;
+     Node *next;
+ };
+
+Node *create();
+void display(Node *head);
+int lenght(Node *head);
+ 
+int main()
+{
+    Node *head=NULL;
+   head=create();
+   display(head);
+   int l=lenght(head);
+   cout<<l<<endl;
+
+return 0;
+}
+Node *create()
+{   
+    int data;
+    Node *head=NULL;
+    Node *tail=NULL;
+    cout<<"Enter the data or press -1 for finsih\n";
+    cin>>data;
+    while(data!=-1)
+    {   Node *new_node=new Node;
+     new_node->data=data;
+        if(head==NULL)
+        {
+            //  //we can either creat new_node in each loop or use it once 
+           
+            head=new_node;
+            tail=new_node; //this way has less time complexity
+        }
+        else{
+            tail->next=new_node;
+            tail=new_node;
+            new_node->next=NULL;
+        }
+        cin>>data;
+
+    }
+    return head;
+}
+void display(Node *head)
+ {
+    Node *temp=head;
+    while(temp!=NULL) //in this case all will be printed along with the last elemnt  however if we use head->next!NULL then last will not be printed
+    //Here we are using a temp ptr so that we dont lose our head ptr
+    
+    {   
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+    cout<<endl;
+}
+//we can use constructors to make our work quite easy//
+int lenght(Node *head)
+{
+    int l=0;
+    if(head==NULL)
+    {
+        return 0;
+    }
+    else{
+        Node *temp=head;
+        while(temp!=NULL)
+        {   
+            temp=temp->next;
+            l++;
+        }
+        return l;
+    }
+}
